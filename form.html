@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>CACTS Reg Form</title>
+
+        <!-- Icons font CSS-->
+        <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+        <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <!-- Font special for pages-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+        <!-- Vendor CSS-->
+        <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+        <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+        <!-- Main CSS-->
+        <link href="css/main.css" rel="stylesheet" media="all">
+    </head>
+    <body>
+        <div class="page-wrapper bg-white p-t-20 p-b-100 font-robo">
+            <div class="wrapper wrapper--w960">
+                <div id="container_1" class="cont_1">  
+                    <p id="title" class=cont_1_title>CACTS ILE-IFE, ILESA CAMPUS, ILESA OSUN STATE </p>
+                    <p>BABAJIDE SCHOOL OF PROPHETS AND EVANGELISTS</p>
+                    <!--title-->
+                    <p id="description">APPLICANT'S BIODATA </p>
+                    <!--description--->            
+                </div><!---container_1--->
+                <div>            
+                    <div id="multi-step-form-container">
+                        <!-- Form Steps / Progress Bar -->
+                        <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+                            <!-- Step 1 -->
+                            <li class="form-stepper-active text-center form-stepper-list" step="1">
+                                <a class="mx-2">
+                                    <span class="form-stepper-circle">
+                                        <span>1</span>
+                                    </span>
+                                    <div class="label">Basic Info</div>
+                                </a>
+                            </li>
+                            <!-- Step 2 -->
+                            <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+                                <a class="mx-2">
+                                    <span class="form-stepper-circle text-muted">
+                                        <span>2</span>
+                                    </span>
+                                    <div class="label text-muted">Personal Data</div>
+                                </a>
+                            </li>
+                            <!-- Step 3 -->
+                            <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+                                <a class="mx-2">
+                                    <span class="form-stepper-circle text-muted">
+                                        <span>3</span>
+                                    </span>
+                                    <div class="label text-muted">Finance</div>
+                                </a>
+                            </li>
+							<!-- Step 4 -->
+                            <li class="form-stepper-unfinished text-center form-stepper-list" step="4">
+                                <a class="mx-2">
+                                    <span class="form-stepper-circle text-muted">
+                                        <span>4</span>
+                                    </span>
+                                    <div class="label text-muted">Education</div>
+                                </a>
+                            </li>
+							<!-- Step 5 -->
+                            <li class="form-stepper-unfinished text-center form-stepper-list" step="5">
+                                <a class="mx-2">
+                                    <span class="form-stepper-circle text-muted">
+                                        <span>5</span>
+                                    </span>
+                                    <div class="label text-muted">Print</div>
+                                </a>
+                            </li>							
+                        </ul>
+                        <!-- Step Wise Form Content -->
+                        <form id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
+						
+                            <!-- Step 1 Content -->
+                            <section id="step-1" class="form-step">
+                                <!--<h2 class="font-normal">Account Basic Details</h2>-->
+                                <!-- Step 1 input fields -->
+                                
+                                    <div class="card card-2">
+                                        <div class="card-heading"></div>
+                                        <div class="card-body">
+                                            <h2 class="title">BASIC INFORMATION</h2>                                            
+                                                <div class="input-group">
+                                                    <input class="input--style-2" type="text" placeholder="Full Name" name="name">
+                                                </div>
+												<div class="input-group">
+                                                    <input class="input--style-2" type="text" placeholder="Residential Address" name="address">
+                                                </div>
+												<div class="input-group">
+                                                    <input class="input--style-2" type="text" placeholder="Postal Address" name="p_address">
+                                                </div>												
+													<div class="input-group">                                                            
+														<input class="input--style-2" type="tel" placeholder="Home Phone" name="telephone">                                                            
+													</div>											   
+                                                <div class="row row-space">
+                                                    <div class="col-2">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2 js-datepicker" type="text" placeholder="Date of Birth" name="birthDate">
+                                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="input-group">
+                                                            <div class="rs-select2 js-select-simple select--no-search">
+                                                            <input class="input--style-2" type="text" placeholder="Place of Birth" name="birthPlace">                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>											
+												<div class="row row-space">
+                                                    <div class="col-3">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="LGA" name="lga">                                                            
+                                                        </div>
+                                                    </div>
+													<div class="col-3">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="State of Origin" name="originState">                                                            
+                                                        </div>
+                                                    </div>
+													<div class="col-3">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="Nationality" name="nationality">                                                            
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+												<div class="row row-space">
+													<table class="maritalStatus">
+														<tr class="maritalStatusTr" style="height: 60px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">Marital Status: </td>	
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Single																
+																<input class="input--style-2" type="radio" name="maritalStatus" value="Single" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Married															
+																<input type="radio" name="maritalStatus" value="Married" />		
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Widower
+																<input type="radio" name="maritalStatus" value="Widower" />
+																</div>
+															</td>
+														</tr>														
+														<tr class="maritalStatusTr">														
+															<td></td>														
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Separated
+																<input type="radio" name="maritalStatus" value="Seperated" />																														  
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+																<div class="input-group">Divorced
+																<input type="radio" name="maritalStatus" value="Divorced" /> 
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+																<div class="input-group">Remarried
+																<input type="radio" name="maritalStatus" value="Remarried" /> 
+																</div>
+														</tr>
+														<br>
+														<br>
+														<tr class="maritalStatusTr" style="height: 170px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">Type of Marriage: </td>																        
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Church
+																<input type="radio" name="marriageType" value="Church" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Court
+																<input type="radio" name="marriageType" value="Court" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Traditional
+																<input type="radio" name="marriageType" value="Traditional" /> 
+																</div>
+															</td>
+														</tr>	
+													</table>																										
+												</div>																																				
+												<div class="input-group" style="margin-top:0px; padding-top:0px;">
+													<input class="input--style-2" type="text" placeholder="Name of Spouse" name="spouseName">                                                            
+												</div>													
+												<div>															
+													<textarea class="input--style-2" style="width:100%; margin-bottom: 1rem; padding: 1rem; border: 1px solid grey; box-shadow: 5px 5px 0 #e5e5e5; border-radius: 20px; outline: none !important;" placeholder="Name of Children and Age" name="childName" rows="5"></textarea>
+												 </div>                                               
+												<div class="row row-space">
+                                                    <div class="col-3">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="Name of Father" name="fatherName">                                                            
+                                                        </div>
+                                                    </div>
+													<div class="col-3">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="Address" name="fatherAddress">                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="Occupation" name="fatherOccupation">                                                            
+                                                        </div>                                                        
+                                                    </div>													
+                                                </div>
+												<div class="row row-space">
+                                                    <div class="col-2">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="tel" placeholder="Phone Number" name="fatherNumber">                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="Religion" name="fatherReligion">                                                            
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+												<div class="row row-space">
+                                                    <div class="col-3">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="Name of Mother" name="motherName">                                                            
+                                                        </div>
+                                                    </div>
+													<div class="col-3">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="Address" name="motherAddress">                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="Occupation" name="motherOccupation">                                                            
+                                                        </div>                                                        
+                                                    </div>													
+                                                </div>
+												<div class="row row-space">
+                                                    <div class="col-2">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="tel" placeholder="Phone Number" name="motherNumber">                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="Religion" name="motherReligion">                                                            
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+												<!--
+                                                <div class="input-group">
+                                                    <div class="rs-select2 js-select-simple select--no-search">
+                                                        <select name="class">
+                                                            <option disabled="disabled" selected="selected">Class</option>
+                                                            <option>Class 1</option>
+                                                            <option>Class 2</option>
+                                                            <option>Class 3</option>
+                                                        </select>
+                                                        <div class="select-dropdown"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row row-space">
+                                                    <div class="col-2">
+                                                        <div class="input-group">
+                                                            <input class="input--style-2" type="text" placeholder="Registration Code" name="res_code">
+                                                        </div>
+                                                    </div>
+                                                </div>     
+												-->
+                                                <div class="mt-3">
+                                                    <button class="button btn-navigate-form-step" type="button" step_number="2">Next</button>
+                                                </div>
+                                        </div>
+                                    </div>            
+                            </section>
+                            <!-- Step 2 Content, default hidden on page load. -->
+                            <section id="step-2" class="form-step d-none">
+                                <!--<h2 class="font-normal">Social Profiles</h2>-->
+                                <!-- Step 2 input fields -->
+                                <div class="card card-2">
+									<div class="card-heading"></div>
+									<div class="card-body">
+										<h2 class="title">APPLICANT'S PERSONAL DATA</h2>                                            
+										<div class="row row-space">
+											<div class="col-1-2">
+												<div class="input-group">
+													<div class="rs-select2 js-select-simple select--no-search">
+														<select name="bornAgainChoice">
+															<option disabled="disabled" selected="selected">Are you genuinely born again according to John 3:1-7	</option>
+															<option>YES</option>
+															<option>NO</option>                                                            
+															<option>I AM NOT SURE</option>                                                            
+														</select>
+													<div class="select-dropdown"></div>
+												</div>
+											</div>
+											</div>
+											<div class="col-3">
+												<div class="input-group">
+													<input class="input--style-2" type="text" placeholder="When?" name="bornAgainDate">                                                            
+												</div>                                                        
+											</div>
+										</div>
+										<div class="row row-space">
+											<div class="col-1-2">
+												<div class="input-group">
+													<input class="input--style-2" type="text" placeholder="What denomination do you belong to?" name="denominationName">                                                            
+												</div>                                                        
+											</div>                                                    
+											<div class="col-3">
+												<div class="input-group">
+													<input class="input--style-2" type="text" placeholder="For how long?" name="denominationDuration">                                                            
+												</div>                                                        
+											</div>
+										</div>											
+										<div class="rs-select2 js-select-simple select--no-search">
+											<div class="input-group">
+												<select name="spiritChoice">
+													<option disabled="disabled" selected="selected">Have you received the baptism of the Holy Spirit according to Acts 2:4?</option>
+													<option>YES</option>
+													<option>NO</option>
+													<option>I AM NOT SURE</option>
+												</select>
+												<div class="select-dropdown"></div>
+											</div>
+										</div>
+										<div class="input-group">
+										<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="What fruit of the Spirit manifest in your life according to Gal.5:22-23?" name="fruitOfSpirit" rows="1"></textarea>
+										</div>
+										<div class="input-group">
+											<input class="input--style-2" type="text" placeholder="What spiritual gifts do you have?" name="spiritualGift">
+										</div>
+										<div class="input-group">
+											<input class="input--style-2" type="text" placeholder="What is your calling?" name="callingChoice">
+										</div>
+										<div class="input-group">
+										<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="Which department(s) are you functioning in the church?" name="deptFunctioning" rows="1"></textarea>
+											
+										</div>
+										<div class="row row-space">
+											<div class="col-1-2">
+												<div class="input-group">
+													<div class="rs-select2 js-select-simple select--no-search">
+														<select name="alreadyInMinistryChoice">
+															<option disabled="disabled" selected="selected">Are you already in ministry?</option>
+															<option>YES</option>
+															<option>NO</option>                                                            															
+														</select>
+													<div class="select-dropdown"></div>
+												</div>
+											</div>
+											</div>
+											<div class="col-3">
+												<div class="input-group">
+													<input class="input--style-2" type="text" placeholder="if yes, for how long?" name="howLongInMinistry">                                                            
+												</div>                                                        
+											</div>
+										</div>
+										<div class="input-group">
+										<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="Give the names of the churches in which you have worked after joining the ministry?" name="churchNameOfWork" rows="1"></textarea>
+										
+										</div>
+										<div class="rs-select2 js-select-simple select--no-search">
+											<div class="input-group">
+												<select name="disciplinedByChurchChoice">
+													<option disabled="disabled" selected="selected">Have you been disciplined by the church for any immoral act?</option>
+													<option>YES</option>
+													<option>NO</option>                                                            															
+												</select>
+												<div class="select-dropdown"></div>
+											</div>
+										</div>
+										<div class="input-group">
+											<input class="input--style-2" type="text" placeholder="Which?" name="offenceDisciplinedFor">                                                            
+										</div>  
+										<div class="row row-space">
+											<div class="col-2">
+													<div class="input-group">
+														<input class="input--style-2" type="text" placeholder="What is your current profession?" name="profession">                                                            
+													</div>                                                        
+												</div>
+												<div class="col-2">
+													
+														<div class="rs-select2 js-select-simple select--no-search">
+														<div class="input-group">
+															<select name="convictedChoice">
+																<option disabled="disabled" selected="selected">Have you been convicted for any criminal offence?</option>
+																<option>YES</option>
+																<option>NO</option>                                                            															
+															</select>
+														<div class="select-dropdown"></div>
+														</div>
+													</div>
+												
+											</div>											
+										</div>
+										<div class="row row-space">
+											<div class="col-2">													
+												<div class="rs-select2 js-select-simple select--no-search">
+													<div class="input-group">
+														<select name="gambleChoice">
+															<option disabled="disabled" selected="selected">Do your gamble or encourage gambling?</option>
+															<option>YES</option>
+															<option>NO</option>                                                            															
+														</select>
+														<div class="select-dropdown"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-2">												
+												<div class="rs-select2 js-select-simple select--no-search">
+													<div class="input-group">
+														<select name="drugStatus">
+															<option disabled="disabled" selected="selected">Do you take alcohol, tobacco, cigarrate or drugs?</option>
+															<option>YES</option>
+															<option>NO</option>                                                            															
+														</select>
+														<div class="select-dropdown"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row row-space">
+											<div class="col-2">												
+												<div class="rs-select2 js-select-simple select--no-search">
+													<div class="input-group">
+														<select name="healthStatus">
+															<option disabled="disabled" selected="selected">Do you have any health or physical problem that may impair your studies?</option>
+															<option>YES</option>
+															<option>NO</option>                                                            															
+														</select>
+														<div class="select-dropdown"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="input-group">
+													<input class="input--style-2" type="text" placeholder="if yes, explain" name="healthStatusExplain">                                                            
+												</div>                                                        
+											</div>												
+										</div>											
+										<div class="row row-space">
+											<div class="col-2">													
+												<div class="rs-select2 js-select-simple select--no-search">
+													<div class="input-group">
+														<select name="rulesAcceptance">
+															<option disabled="disabled" selected="selected">Are you ready to abide by the rules and regulations of this seminary?</option>
+															<option>YES</option>
+															<option>NO</option>                                                            															
+														</select>
+														<div class="select-dropdown"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-2">												
+												<div class="rs-select2 js-select-simple select--no-search">
+													<div class="input-group">
+														<select name="disciplineAcceptance">
+															<option disabled="disabled" selected="selected">Do you agree to be disciplined if you break the rules and regulations of the school?</option>
+															<option>YES</option>
+															<option>NO</option>                                                            															
+														</select>
+														<div class="select-dropdown"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+											
+										<div class="mt-3">
+											<button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
+											<button class="button btn-navigate-form-step" type="button" step_number="3">Next</button>
+										</div>											
+									</div>
+								</div>            
+                            </section>
+							<!-- Step 2 Content, default hidden on page load. -->
+                            <section id="step-3" class="form-step d-none">
+                                <!--<h2 class="font-normal">Social Profiles</h2>-->
+                                <!-- Step 2 input fields -->
+                                <div class="card card-2">
+									<div class="card-heading"></div>
+									<div class="card-body">
+										<h2 class="title">FINANCE</h2>                                            
+																			
+										<div class="rs-select2 js-select-simple select--no-search">
+											<div class="input-group">
+												<select name="otherDependencyOnYou">
+													<option disabled="disabled" selected="selected">Are there other people depending on you for financial support?</option>
+													<option>YES</option>
+													<option>NO</option>													
+												</select>
+												<div class="select-dropdown"></div>
+											</div>
+										</div>
+										<div class="row row-space">
+													<table class="maritalStatus">
+														<tr class="maritalStatusTr" style="height: 60px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">Who will be responsible for payment of necessary fees required by the school?</td>	
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Self																
+																<input class="input--style-2" type="radio" name="sponsor" value="Self" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Parents/Guardian															
+																<input type="radio" name="sponsor" value="Parents/Guardian" />		
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Spouse
+																<input type="radio" name="sponsor" value="Spouse" />
+																</div>
+															</td>
+														</tr>														
+														<tr class="maritalStatusTr">														
+															<td></td>														
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Church
+																<input type="radio" name="sponsor" value="Church" />																														  
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+																<div class="input-group">Others
+																<input type="radio" name="sponsor" value="Others" /> 
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+																</td
+														</tr>
+															
+													</table>																										
+												</div>	
+										
+											
+										<div class="mt-3">
+											<button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
+											<button class="button btn-navigate-form-step" type="button" step_number="4">Next</button>
+										</div>											
+									</div>
+								</div>            
+                            </section>							
+							<!-- Step 2 Content, default hidden on page load. -->
+                            <section id="step-4" class="form-step d-none">
+                                <!--<h2 class="font-normal">Social Profiles</h2>-->
+                                <!-- Step 2 input fields -->
+                                <div class="card card-2">
+									<div class="card-heading"></div>
+									<div class="card-body">
+										<h2 class="title">EDUCATIONAL DATA</h2>
+										<div class="row row-space">
+													<table class="maritalStatus">
+														<tr class="maritalStatusTr" style="height: 60px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">What programme do you wish to pursue in Babajide School of Prophets and Evangelists?</td>	
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Certificate of Theology 																
+																<input class="input--style-2" type="radio" name="programmeOfStudy" value="Certificate of Theology" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Diploma in Theology 															
+																<input type="radio" name="programmeOfStudy" value="Diploma in Theology" />		
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Bachelor of Evangelism 
+																<input type="radio" name="programmeOfStudy" value="Bachelor of Evangelism" />
+																</div>
+															</td>
+														</tr>														
+														<tr class="maritalStatusTr">														
+															<td></td>														
+															<td class="maritalStatusTd">
+															<div class="input-group">
+																Bachelor of Prophetic Ministry 
+																<input type="radio" name="Bachelor of Evangelism" value="Bachelor of Prophetic Ministry" />																														  
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+																<div class="input-group">Bachelor of Missions
+																<input type="radio" name="Bachelor of Prophetic Ministry" value="Bachelor of Missions" /> 
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+																</td>
+														</tr>
+															
+													</table>																										
+												</div>	
+										
+												<label class="formLabel">List in chronological order of all schools, universities, bible colleges and seminaries attended</label>
+												<div class="row row-space">
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="NAME OF SCHOOL" name="schoolName1">                                                            
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="DURATION" name="schDuration1">                                                            
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="CERT. OBTAINED" name="certObtained1">                                                            
+														</div>
+													</div>													
+												</div>
+												<div class="row row-space">
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="NAME OF SCHOOL" name="schoolName2">                                                            
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="DURATION" name="schDuration2">                                                            
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="CERT. OBTAINED" name="certObtained2">                                                            
+														</div>
+													</div>
+													</div>
+													<div class="row row-space">
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="NAME OF SCHOOL" name="schoolName3">                                                            
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="DURATION" name="schDuration3">                                                            
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="CERT. OBTAINED" name="certObtained3">                                                            
+														</div>
+													</div>													
+												</div>
+												<div class="row row-space">
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="NAME OF SCHOOL" name="schoolName4">                                                            
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="DURATION" name="schDuration4">                                                            
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group">
+														
+															<input class="input--style-2" type="text" placeholder="CERT. OBTAINED" name="certObtained4">                                                            
+														</div>
+													</div>													
+												</div>
+												
+										<div class="mt-3">
+											<button class="button btn-navigate-form-step" type="button" step_number="3">Prev</button>
+											<button class="button btn-navigate-form-step" type="button" step_number="5">Next</button>
+										</div>											
+									</div>
+								</div>            
+                            </section>			
+													
+                            </section>
+                            <!-- Step 5 Content, default hidden on page load. -->
+                            <section id="step-5" class="form-step d-none">                                
+                                <!-- Step 3 input fields -->
+                                <div class="card card-2">
+								
+                                        <div class="card-heading"></div>
+                                        <div class="card-body">
+										<p style="color:red;">REQUIREMENTS
+										NOTE: The completion of this form does not imply acceptance. Submit this form with an autobiographical sketch of about 300 words, including your salvation story, christian commitment and experiences and the reason why you wish to attend Babajide School of Prophets and Evangelists.
+
+										Also, you are required to come with
+
+										- 2 recent passport photographs
+										- a recommendation letter from your District Superintendent and
+										- photocopies of your certificates: baptismal certificate and marriage certificate</p>
+                                            <h2 class="title" style="margin-top: 2rem;">BASIC INFORMATION</h2> 
+
+                                                <div class="input-group-print">Full Name:													
+                                                    <input class="input--style-2" type="text" placeholder="No Data" name="namePrint">
+                                                    
+                                                </div>
+												<div class="input-group-print">Residential Address:
+													<textarea class="input--style-2" placeholder="No Data" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" name="addressPrint" rows="1"></textarea>
+										
+                                                </div>
+												<div class="input-group-print">Postal Address:
+													<textarea class="input--style-2" placeholder="No Data" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" name="p_addressPrint" rows="1"></textarea>
+                                                </div>												
+													<div class="input-group-print">Home Phone:                      
+														<input class="input--style-2" type="tel" placeholder="No Data" name="telephonePrint">                                                            
+													</div>											   
+                                                <div class="row row-space">
+                                                    <div class="col-2">
+                                                        <div class="input-group-print">Date of Birth:
+                                                            <input class="input--style-2 js-datepicker" type="text" placeholder="No Data" name="birthDatePrint">
+                                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="input-group-print">
+                                                            Place of Birth:
+                                                            <input class="input--style-2" type="text" placeholder="No Data" name="birthPlacePrint">                                                                
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>											
+												<div class="row row-space">
+                                                    <div class="col-3">
+                                                        <div class="input-group-print">LGA:
+                                                            <input class="input--style-2" type="text" placeholder="No Data" name="lgaPrint">                                                            
+                                                        </div>
+                                                    </div>
+													<div class="col-3">
+                                                        <div class="input-group-print">State of Origin:
+                                                            <input class="input--style-2" type="text" placeholder="No Data" name="originStatePrint">                                                            
+                                                        </div>
+                                                    </div>
+													<div class="col-3">
+                                                        <div class="input-group-print">Nationality:
+                                                            <input class="input--style-2" type="text" placeholder="No Data" name="nationalityPrint">                                                            
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+												<div class="row row-space">
+													<table class="maritalStatus">
+														<tr class="maritalStatusTr" style="height: 60px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">Marital Status: </td>	
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																<input class="input--style-2" type="text" placeholder="No Data" name="maritalStatusPrint">																
+															</td>
+														</tr>														
+														<br>
+														<br>
+														<tr class="maritalStatusTr" style="height: 170px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">Type of Marriage: </td>																        
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																<input class="input--style-2" type="text" placeholder="No Data" name="marriageTypePrint">
+															</div>
+														</td>
+														</tr>	
+													</table>																										
+												</div>																																				
+												<div class="input-group-print" style="margin-top:0px; padding-top:0px;">Name of Spouse:
+													<input class="input--style-2" type="text" placeholder="No Data" name="spouseNamePrint">
+												</div>													
+												<div>Name of Children and Age:
+													<textarea class="input--style-2" placeholder="No Data" style="width:100%; margin-bottom: 1rem; padding: 1rem; border: 1px solid grey; box-shadow: 5px 5px 0 #e5e5e5; border-radius: 20px; outline: none !important;" name="childNamePrint" rows="5"></textarea>
+												 </div>                                               
+												<div class="row row-space">
+                                                    <div class="col-3">
+                                                        <div class="input-group-print">Name of Father:
+                                                            <input class="input--style-2" type="text" placeholder="No Data" name="fatherNamePrint">                                                            
+                                                        </div>
+                                                    </div>
+													<div class="col-3">
+                                                        <div class="input-group-print">Address:
+															<textarea class="input--style-2" placeholder="No Data" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" name="fatherAddressPrint" rows="1"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="input-group-print">Occupation:
+                                                            <input class="input--style-2" type="text" placeholder="No Data" name="fatherOccupationPrint">
+                                                        </div>                                                        
+                                                    </div>													
+                                                </div>
+												<div class="row row-space">
+                                                    <div class="col-2">
+                                                        <div class="input-group-print">Phone Number:
+                                                            <input class="input--style-2" type="tel" placeholder="No Data" name="fatherNumberPrint">                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="input-group-print">Religion:
+                                                            <input class="input--style-2" type="text" placeholder="No Data" name="fatherReligionPrint">                                                            
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+												<div class="row row-space">
+                                                    <div class="col-3">
+                                                        <div class="input-group-print">Name of Mother:
+                                                            <input class="input--style-2" type="text" placeholder="No Data" name="motherNamePrint">                                                            
+                                                        </div>
+                                                    </div>
+													<div class="col-3">
+                                                        <div class="input-group-print">Address:
+														<textarea class="input--style-2" placeholder="No Data" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" name="motherAddressPrint" rows="1"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="input-group-print">Occupation:
+                                                            <input class="input--style-2" type="text" placeholder="No Data" name="motherOccupationPrint">                                                            
+                                                        </div>                                                        
+                                                    </div>													
+                                                </div>
+												<div class="row row-space">
+                                                    <div class="col-2">
+                                                        <div class="input-group-print">Phone Number:
+                                                            <input class="input--style-2" type="tel" placeholder="No Data" name="motherNumberPrint">                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="input-group-print">Religion:
+                                                            <input class="input--style-2" type="text" placeholder="No Data" name="motherReligionPrint">                                                            
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+												<h2 class="title">APPLICANT'S PERSONAL DATA</h2>                                            
+										<div class="row row-space">
+											<div class="col-1-2">
+												<div class="input-group-print">Are you genuinely born again according to John 3:1-7?
+													<input class="input--style-2" type="text" placeholder="No Data" name="bornAgainChoicePrint">
+													
+											</div>
+											</div>
+											<div class="col-3">
+												<div class="input-group-print">When?
+													<input class="input--style-2" type="text" placeholder="No Data" name="bornAgainDatePrint">
+												</div>                                                        
+											</div>
+										</div>
+										<div class="row row-space">
+											<div class="col-1-2">
+												<div class="input-group-print">What denomination do you belong to?
+													<input class="input--style-2" type="text" placeholder="No Data" name="denominationNamePrint">                                                            
+												</div>                                                        
+											</div>                                                    
+											<div class="col-3">
+												<div class="input-group-print">For how long?
+													<input class="input--style-2" type="text" placeholder="No Data" name="denominationDurationPrint">                                                            
+												</div>                                                        
+											</div>
+										</div>											
+										<div class="rs-select2 js-select-simple select--no-search">
+											<div class="input-group-print">Have you received the baptism of the Holy Spirit according to Acts 2:4?
+												<input class="input--style-2" type="text" placeholder="No Data" name="spiritChoicePrint">
+										</div>
+										<div class="input-group-print">What fruit of the Spirit manifest in your life according to Gal.5:22-23?
+											<input class="input--style-2" type="text" placeholder="No Data" name="fruitOfSpiritPrint">
+										</div>
+										<div class="input-group-print">What spiritual gifts do you have?
+										<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="No Data" name="spiritualGiftPrint" rows="1"></textarea>
+										</div>
+										<div class="input-group-print">What is your calling?
+											<input class="input--style-2" type="text" placeholder="No Data" name="callingChoicePrint">
+										</div>
+										<div class="input-group-print">Which department(s) are you functioning in the church?
+											<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="No Data" name="deptFunctioningPrint" rows="1"></textarea>
+										</div>
+										<div class="row row-space">
+											<div class="col-1-2">
+												<div class="input-group-print">Are you already in ministry?
+													<input class="input--style-2" type="text" placeholder="No Data" name="alreadyInMinistryChoicePrint">
+													
+											</div>
+											</div>
+											<div class="col-3">
+												<div class="input-group-print">if yes, for how long?
+													<input class="input--style-2" type="text" placeholder="No Data" name="howLongInMinistryPrint">
+												</div>                                                        
+											</div>
+										</div>
+										<div class="input-group-print">Give the names of the churches in which you have worked after joining the ministry?
+											<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="No Data" name="churchNameOfWorkPrint" rows="1"></textarea>
+										</div>
+										<div class="rs-select2 js-select-simple select--no-search">
+											<div class="input-group-print">Have you been disciplined by the church for any immoral act?
+											<input class="input--style-2" type="text" placeholder="No Data" name="disciplinedByChurchChoicePrint">
+											
+										</div>
+										
+										<div class="input-group-print">Which?
+											<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="No Data" name="offenceDisciplinedForPrint" rows="1"></textarea>
+										</div>  
+										<div class="row row-space">
+											<div class="col-2">
+													<div class="input-group-print">What is your current profession?
+														<input class="input--style-2" type="text" placeholder="No Data" name="professionPrint">
+													</div>                                                        
+												</div>
+												<div class="col-2">
+													<div class="input-group-print">Have you been convicted for any criminal offence?
+													<input class="input--style-2" type="text" placeholder="No Data" name="convictedChoicePrint">
+														
+												</div>
+											</div>											
+										</div>
+										<div class="row row-space">
+											<div class="col-2">													
+												<div class="rs-select2 js-select-simple select--no-search">
+													<div class="input-group-print">Do you gamble or encourage gambling?
+													<input class="input--style-2" type="text" placeholder="No Data" name="gambleChoicePrint">
+													
+													</div>
+												</div>
+											</div>
+											<div class="col-2">												
+												<div class="rs-select2 js-select-simple select--no-search">
+													<div class="input-group-print">Do you take alcohol, tobacco, cigarrate or drugs?
+													<input class="input--style-2" type="text" placeholder="No Data" name="drugStatusPrint">
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row row-space">
+											<div class="col-2">												
+												<div class="rs-select2 js-select-simple select--no-search">
+													<div class="input-group-print">Do you have any health or physical problem that may impair your studies?
+													<input class="input--style-2" type="text" placeholder="No Data" name="healthStatusPrint">
+														
+													</div>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="input-group-print">if yes, explain
+													<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="No Data" name="healthStatusExplainPrint" rows="1"></textarea>
+												</div>                                                        
+											</div>												
+										</div>											
+										<div class="row row-space">
+											<div class="col-2">													
+												<div class="rs-select2 js-select-simple select--no-search">
+													<div class="input-group-print">Are you ready to abide by the rules and regulations of this seminary?
+													<input class="input--style-2" type="text" placeholder="No Data" name="rulesAcceptancePrint">
+														
+													</div>
+												</div>
+											</div>
+											<div class="col-2">												
+												<div class="rs-select2 js-select-simple select--no-search">
+													<div class="input-group-print">Do you agree to be disciplined if you break the rules and regulations of the school?
+													<input class="input--style-2" type="text" placeholder="No Data" name="disciplineAcceptancePrint">
+														
+													</div>
+												</div>
+											</div>
+										</div>
+											<h2 class="title">FINANCE</h2>                                            
+																	
+										<div class="rs-select2 js-select-simple select--no-search">
+											<div class="input-group-print">Are there other people depending on you for financial support?
+											<input class="input--style-2" type="text" placeholder="No Data" name="otherDependencyOnYouPrint">
+												
+											</div>
+										</div>
+										<div class="row row-space">
+													<table class="maritalStatus">
+														<tr class="maritalStatusTr" style="height: 60px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">Who will be responsible for payment of necessary fees required by the school?</td>	
+															<td class="maritalStatusTd">
+															<div class="input-group-print">
+																<input class="input--style-2" type="text" placeholder="No Data" name="sponsorPrint">																
+															</div>
+														</td>
+														</tr>															
+													</table>																										
+												</div>	
+												<h2 class="title">EDUCATIONAL DATA</h2>  
+										<div class="row row-space">
+													<table class="maritalStatus">
+														<tr class="maritalStatusTr" style="height: 60px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">What programme do you wish to pursue in Babajide School of Prophets and Evangelists?</td>	
+															<td class="maritalStatusTd">
+															<div class="input-group-print">
+																<input class="input--style-2" type="text" placeholder="No Data" name="programmeOfStudyPrint">
+															</div>
+															</td>
+														</tr>	
+													</table>																										
+												</div>	
+										
+												<label class="formLabel">List in chronological order of all schools, universities, bible colleges and seminaries attended</label>
+												<div class="row row-space">
+													<div class="col-3">	
+														<div class="input-group-print">
+													<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="NAME OF SCHOOL" name="schoolName1Print" rows="1"></textarea>
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group-print">
+														<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="DURATION" name="schDuration1Print" rows="1"></textarea>
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group-print">
+														<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="CERT. OBTAINED" name="certObtained1Print" rows="1"></textarea>
+														</div>
+													</div>													
+												</div>
+												<div class="row row-space">
+													<div class="col-3">	
+														<div class="input-group-print">
+													<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="NAME OF SCHOOL" name="schoolName2Print" rows="1"></textarea>
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group-print">
+														<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="DURATION" name="schDuration2Print" rows="1"></textarea>
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group-print">
+														<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="CERT. OBTAINED" name="certObtained2Print" rows="1"></textarea>
+														</div>
+													</div>													
+												</div><div class="row row-space">
+													<div class="col-3">	
+														<div class="input-group-print">
+													<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="NAME OF SCHOOL" name="schoolName3Print" rows="1"></textarea>
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group-print">
+														<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="DURATION" name="schDuration3Print" rows="1"></textarea>
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group-print">
+														<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="CERT. OBTAINED" name="certObtained3Print" rows="1"></textarea>
+														</div>
+													</div>													
+												</div><div class="row row-space">
+													<div class="col-3">	
+														<div class="input-group-print">
+													<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="NAME OF SCHOOL" name="schoolName4Print" rows="1"></textarea>
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group-print">
+														<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="DURATION" name="schDuration4Print" rows="1"></textarea>
+														</div>
+													</div>
+													<div class="col-3">	
+														<div class="input-group-print">
+														<textarea class="input--style-2" style="width:100%; padding-bottom: 1rem; border: none !important; outline: none !important;" placeholder="CERT. OBTAINED" name="certObtained4Print" rows="1"></textarea>
+														</div>
+													</div>													
+												</div>
+												<label class="formLabel">I, _________________________________________________, certify that to the best of my
+												knowledge, all responses on this form are true. If I am admitted as a theological student, 
+												I am willing to submit cheerfully to all the regulations of Babajide School of Prophets and Evangelists</label>
+												<div class="row row-space" style="margin-top:1rem; margin-bottom: 2rem;">
+													<div class="col-2" style="height: 3rem">															
+														<label class="formLabel">Applicant's signature ______________________________</label>														
+													</div>
+													<div class="col-2" style="height: 3rem">	
+														<label class="formLabel">Date ______________________________</label>
+													</div>													
+												</div>
+												
+												<h2 class="title">PERSONAL REFERENCE</h2>  
+												<h6 class="formLabel">This form should be filled by an ELDER/ DEACON who knows the applicant well.
+												<br>TO THE REFREE: Please honestly complete this form, commenting on the areas where you have a knowledge of the applicant.</h6>
+                                               <div class="row row-space">
+													<table class="maritalStatus">
+														<tr class="maritalStatusTr" style="height: 60px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">How well do you know him?</td>	
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																Casually 																
+																<input class="input--style-2" type="radio" name="refereeRelationship1Print" value="Casually" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																Well 															
+																<input type="radio" name="refereeRelationship1Print" value="Well" />		
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																Very Well 
+																<input type="radio" name="refereeRelationship1Print" value="Very Well" />
+																</div>
+															</td>
+														</tr>														
+														
+													</table>																										
+												</div>	
+										
+													<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">For how long have you known the applicant?</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refereeRelationshipPeriod1Print" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Is he genuinely born again?</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refChristianTestimony1Print" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">For how have you known him to be born again?</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refChristianTestimonyPeriod1Print" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Which spiritual gift(s) does he possess that made you believe he will be a blessing to the church?</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refGiftTestimony1Print" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Which moral do you know he has?</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refMoralTestimony1Print" />
+															</div>
+															</div>
+															</div>															
+														<label class="formLabel">Comment briefly on his personality and character</label>															
+														<div>															
+													<textarea class="input--style-2" style="width:100%; margin-bottom: 1rem; padding: 1rem; border: 1px solid grey; box-shadow: 5px 5px 0 #e5e5e5; border-radius: 20px; outline: none !important;" name="refComment1Print" rows="5"></textarea>                                                            															                                                        
+												 </div>
+												
+													
+														<div class="row row-space">
+													<table class="maritalStatus">
+														<tr class="maritalStatusTr" style="height: 60px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">Choose One:</td>	
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																I do not recommend
+																<input class="input--style-2" type="radio" name="refRecommendation1Print" value="I do not recommend" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																I recommend
+																<input type="radio" name="refRecommendation1Print" value="I recommend" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																I recommend with reservation
+																<input type="radio" name="refRecommendation1Print" value="I recommend with reservation" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																I recommend with enthusiasm
+																<input type="radio" name="refRecommendation1Print" value="I recommend with enthusiasm" />
+																</div>
+															</td>
+														</tr>															
+													</table>																										
+												</div>
+																																											
+													<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Name of Referee:</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refereeName1Print" />
+															</div>
+															</div>
+															</div>	
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Address</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refereeAddress1Print" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Phone</label>
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refereePhone1Print" />
+															</div>														
+													</div>
+													<div class="col-3">
+														<label class="formLabel">Signature</label>
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refereeSign1Print" />
+															</div>														
+													</div>
+													<div class="col-3">
+														<label class="formLabel">Date</label>
+														<div class="input-group-print">
+                                                            <input class="input--style-2 js-datepicker" type="text" name="referralDate1Print">
+                                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                                        </div>														
+													</div>
+												</div>	
+												<h2 class="title">PERSONAL REFERENCE</h2>  
+												<h6 class="formLabel">This form should be filled by a SENIOR PASTOR or DISTRICT SUPERINTENDENT who knows the applicant well.
+<br>TO THE REFREE: Please honestly complete this form, commenting on the areas where you have a knowledge of the applicant.</h6>
+                                              <div class="row row-space">
+													<table class="maritalStatus">
+														<tr class="maritalStatusTr" style="height: 60px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">How well do you know him?</td>	
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																Casually 																
+																<input class="input--style-2" type="radio" name="refereeRelationship12Print" value="Casually" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																Well 															
+																<input type="radio" name="refereeRelationship2Print" value="Well" />		
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																Very Well 
+																<input type="radio" name="refereeRelationship2Print" value="Very Well" />
+																</div>
+															</td>
+														</tr>														
+														
+													</table>																										
+												</div>	
+													<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">For how long have you known the applicant?</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refereeRelationshipPeriod2Print" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Is he genuinely born again?</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refChristianTestimony2Print" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">For how have you known him to be born again?</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refChristianTestimonyPeriod2Print" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Which spiritual gift(s) does he possess that made you believe he will be a blessing to the church?</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refGiftTestimony2Print" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Which moral do you know he has?</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refMoralTestimony2Print" />
+															</div>
+															</div>
+															</div>															
+														<label class="formLabel">Comment briefly on his personality and character</label>															
+														<div>															
+													<textarea class="input--style-2" style="width:100%; margin-bottom: 1rem; padding: 1rem; border: 1px solid grey; box-shadow: 5px 5px 0 #e5e5e5; border-radius: 20px; outline: none !important;" name="refComment2Print" rows="5"></textarea>
+												 </div>
+												<div class="row row-space">
+													<table class="maritalStatus">
+														<tr class="maritalStatusTr" style="height: 60px !important;">
+															<td class="maritalStatusTd" style="text-align:left !important; margin:0px;">Choose One:</td>	
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																I do not recommend
+																<input class="input--style-2" type="radio" name="refRecommendation2Print" value="I do not recommend" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																I recommend
+																<input type="radio" name="refRecommendation2Print" value="I recommend" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																I recommend with reservation
+																<input type="radio" name="refRecommendation2Print" value="I recommend with reservation" />
+																</div>
+															</td>
+															<td class="maritalStatusTd">
+															<div class="input-group-print" style="border-bottom: none !important;">
+																I recommend with enthusiasm
+																<input type="radio" name="refRecommendation2Print" value="I recommend with enthusiasm" />
+																</div>
+															</td>
+														</tr>															
+													</table>																										
+												</div>																											
+													<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Name of Refree:</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refereeName2Print" />
+															</div>
+															</div>
+															</div>	
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Address</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refereeAddress2Print" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Phone</label>
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refereePhone2Print" />
+															</div>														
+													</div>
+													<div class="col-3">
+														<label class="formLabel">Signature</label>
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="refereeSign2Print" />
+															</div>														
+													</div>
+													<div class="col-3">
+														<label class="formLabel">Date</label>
+														<div class="input-group-print">
+                                                            <input class="input--style-2 js-datepicker" type="text" name="referralDate2Print">
+                                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                                        </div>														
+													</div>
+												</div>	
+												<h2 class="title">FOR OFFICIAL USE ONLY</h2>
+												<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Programme applied for</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="programAppliedForPrint" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+													<div class="col-3">
+														<label class="formLabel">Programme admitted into</label>															
+													</div>
+														<div class="col-1-2">	
+														<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="programAdmittedIntoPrint" />
+															</div>
+															</div>
+															</div>
+															<div class="row row-space">
+														<div class="col-3">
+															<label class="formLabel">Mark scored during examination</label>															
+														</div>
+														<div class="col-1-2">	
+															<div class="input-group-print">																																
+																<input class="input--style-2" type="text" name="markScoredPrint" />
+															</div>
+														</div>
+													</div>
+															<h6 class="title">COMMENT</h6>
+														<div>															
+													<textarea class="input--style-2" style="width:100%; margin-bottom: 1rem; padding: 1rem; border: 1px solid grey; box-shadow: 5px 5px 0 #e5e5e5; border-radius: 20px; outline: none !important;" name="officialCommentPrint" rows="5"></textarea>
+												 </div>	
+												<h2 class="title">STUDENTSHIP OATH</h2>
+												<div class="row row-space">
+													<div class="col-3" style="display: flex;">
+														<p class="formLabel">I, </p> 
+														<input class="input--style-2" style="width: 95%; height: 2rem; border-bottom: 1px solid black" type="text" />
+													</div>
+													<div class="col-1-2" style="display:flex;">
+														<p class="formLabel">ATTENDING </p>
+														<input class="input--style-2" style="width: 85%; height: 2rem; border-bottom: 1px solid black;" type="text" />
+													</div>
+												</div>
+												<div style="display: flex;">
+													<div style="width: 15%;">
+														<p class="formLabel" style="width: auto;">WITH ADDRESS </p>
+													</div>
+													
+														<textarea class="input--style-2" style="width:85%; margin-bottom: 1rem; border: 1px solid #grey; box-shadow: 5px 5px 0 #e5e5e5; border-radius: 20px; outline: none !important;" rows="5"></textarea>																										</div>
+													
+												</div>
+												SINCERELY PROMISE TOBE ABLE BY THE STIPULATED RULES AND REGULATIONS, LIVE IN ACCORDANCE WITH THE STANDING POLICIES AND OBEY ALL 
+												INSTRUCTIONS WHICH MAY FROM TIME TO TIME BE ISSUED BY THE AUTHORITY OF THE SCHOOL. I PROMISE TO ENGAGE MYSELF IN ANY OF THE FOLLOWING OFFENCES:
+												
+												<div style="display: flex; width: 100%; margin-top:1rem; margin-bottom: 2rem;">
+													<div style="width: 100%">
+														<ul>
+															<li> CULTISM</li>
+															<li> INTERNET FRAUD</li>
+															<li> CYBER-CRIME</li>
+															<li> EXTORTION</li>
+															<li> EXAMINATION MALPRACTICE</li>
+															 
+															</ul>
+													</div>
+													<div style="width: 100%">
+														<ul>
+															<li> THEFT</li>
+															<li> FIGHTING</li>
+															<li> DRINKING OF ALCOHOL</li>
+															<li> SMOKING OF TOBACCO|INDIAN HEMP</li>
+															<li> ADULTERY|FORNICATION</li>
+														</ul>
+													</div>
+												</div>
+												-AND OTHER RULES AND REGULATIONS CONTRARY TO THE BIBLE<br><br>
+BY APPENDING MY SIGNATURE, I AGREE THAT WHENEVER I ENGAGE IN ANY OF THE ACTS STATED ABOVE, 
+I SHOULD FACE THE DISCIPLARY COMMITTE OF THE SCHOOL AND BE DISMISSED IMMEDIATELY IF FOUND GUILTY.
+												<div style="display: flex; width: 100%;">
+														<div style="width: 20%">
+														<p class="formLabel">STUDENT'S SIGNATURE </p> 
+													</div>
+													<div style="width: 45%; margin-right: 20px;">
+														<input class="input--style-2" style="width: 100%; height: 2rem; border-bottom: 1px solid black;" type="text" />
+													</div>
+													
+													
+														<div style="width: 10%">
+														<p class="formLabel">DATE </p> 
+													</div>
+													<div style="width: 25%">
+														<input class="input--style-2" style="width: 100%; height: 2rem; border-bottom: 1px solid black;" type="text" />
+													</div>
+													
+												</div>
+												<div style="display: flex; width: 100%;">
+														<div style="width: 20%">
+														<p class="formLabel">PARENTS NAME & SIGNATURE </p> 
+													</div>
+													<div style="width: 45%; margin-right: 20px;">
+														<input class="input--style-2" style="width: 100%; height: 3rem; border-bottom: 1px solid black;" type="text" />
+													</div>
+													
+													
+														<div style="width: 10%">
+														<p class="formLabel">DATE </p> 
+													</div>
+													<div style="width: 25%">
+														<input class="input--style-2" style="width: 100%; height: 3rem; border-bottom: 1px solid black;" type="text" />
+													</div>
+													
+												</div><div style="display: flex; width: 100%;">
+														<div style="width: 20%">
+														<p class="formLabel">ASSEMBLY PASTOR'S NAME & SIGNATURE </p> 
+													</div>
+													<div style="width: 45%; margin-right: 20px;">
+														<input class="input--style-2" style="width: 100%; height: 3rem; border-bottom: 1px solid black;" type="text" />
+													</div>
+													
+													
+														<div style="width: 10%">
+														<p class="formLabel">DATE </p> 
+													</div>
+													<div style="width: 25%">
+														<input class="input--style-2" style="width: 100%; height: 3rem; border-bottom: 1px solid black;" type="text" />
+													</div>
+													
+												</div>
+												<div style="display: flex; width: 100%;">
+														<div style="width: 30%">
+														<p class="formLabel">DCC SUPERINTENDENT'S NAME & SIGNATURE </p> 
+													</div>
+													<div style="width: 35%; margin-right: 20px;">
+														<input class="input--style-2" style="width: 100%; height: 3rem; border-bottom: 1px solid black;" type="text" />
+													</div>
+													
+													
+														<div style="width: 10%">
+														<p class="formLabel">DATE </p> 
+													</div>
+													<div style="width: 25%">
+														<input class="input--style-2" style="width: 100%; height: 3rem; border-bottom: 1px solid black;" type="text" />
+													</div>
+													
+												</div>			
+												
+                                       
+									
+											<div class="mt-3" id="lastButtons">
+									<button class="button btn-navigate-form-step" type="button" step_number="4">Prev</button>
+									
+									<button class="button submit-btn" type="submit">Print</button>
+								</div>	
+								</div>
+                            </section>							
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>        
+		
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="innerForm.js"></script>
+        <!-- Jquery JS-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <!-- Vendor JS-->
+        <script src="vendor/select2/select2.min.js"></script>
+        <script src="vendor/datepicker/moment.min.js"></script>
+        <script src="vendor/datepicker/daterangepicker.js"></script>
+
+        <!-- Main JS-->
+        <script src="js/global.js"></script>
+    </body>
+</html>
